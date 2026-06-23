@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indoor Roots – The Garden Shop | Premium Plants & Miniature Toys</title>
+    <meta name="description" content="Indoor Roots is your premium destination for indoor plants, miniature toys, stylish pots and nature-inspired décor. Bringing nature closer to you.">
+    <meta name="keywords" content="indoor plants, miniature toys, plant shop, garden shop, indoor roots, lucky plants, air purifying plants">
+    <link rel="canonical" href="index.html">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Page-specific styles */
+        .hero-decor-circle {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero-decor-1 {
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(42,92,74,0.07) 0%, transparent 70%);
+            top: -100px; right: -100px;
+        }
+        .hero-decor-2 {
+            width: 300px; height: 300px;
+            background: radial-gradient(circle, rgba(197,168,128,0.08) 0%, transparent 70%);
+            bottom: 50px; left: 10%;
+        }
+        .features-banner {
+            background: var(--color-forest-dark);
+            padding: 30px 0;
+        }
+        .features-banner-inner {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .feature-banner-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            color: rgba(255,255,255,0.85);
+        }
+        .feature-banner-item i {
+            font-size: 1.5rem;
+            color: var(--color-gold);
+        }
+        .feature-banner-item span {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .why-choose-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 60px;
+        }
+        .why-card {
+            background: var(--color-white);
+            border-radius: var(--border-radius-md);
+            padding: 36px 24px;
+            text-align: center;
+            box-shadow: var(--shadow-subtle);
+            transition: var(--transition-smooth);
+            border-bottom: 3px solid transparent;
+        }
+        .why-card:hover {
+            transform: translateY(-6px);
+            border-bottom-color: var(--color-gold);
+            box-shadow: var(--shadow-medium);
+        }
+        .why-icon {
+            width: 70px; height: 70px;
+            border-radius: 50%;
+            background: var(--color-mint-soft);
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.8rem;
+            color: var(--color-sage);
+            transition: var(--transition-smooth);
+        }
+        .why-card:hover .why-icon {
+            background: var(--color-sage);
+            color: var(--color-white);
+        }
+        .why-card h4 { font-size: 1.1rem; margin-bottom: 8px; }
+        .why-card p { font-size: 0.85rem; color: var(--color-grey-medium); font-weight: 300; }
+        @media (max-width: 768px) {
+            .why-choose-grid { grid-template-columns: repeat(2,1fr); }
+            .features-banner-inner { flex-direction: column; align-items: center; }
+        }
+        @media (max-width: 480px) {
+            .why-choose-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ======= PAGE LOADER ======= -->
+<div class="loader-wrapper" id="loader">
+    <div class="loader-logo">
+        <div class="loader-logo-main">INDOOR ROOTS</div>
+        <div class="loader-logo-tag">The Garden Shop</div>
+    </div>
+    <div class="loader-spinner">
+        <i class="fas fa-leaf loader-leaf"></i>
+    </div>
+</div>
+
+<!-- ======= HEADER ======= -->
+<header class="header" id="header">
+    <div class="container">
+        <a href="index.html" class="logo">
+            
+            <span class="logo-main">INDOOR ROOTS</span>
+            <span class="logo-tag">✦ The Garden Shop ✦</span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="miniature-toys.html" class="nav-link">Miniature Toys</a></li>
+            <li><a href="plants.html" class="nav-link">Plants</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="https://wa.me/917660087770" target="_blank" class="whatsapp-nav-btn" title="Chat on WhatsApp" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <div class="mobile-toggle" id="mobileToggle" aria-label="Open Menu">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ======= HERO SECTION ======= -->
+<section class="hero" id="home">
+    <div class="hero-decor-circle hero-decor-1"></div>
+    <div class="hero-decor-circle hero-decor-2"></div>
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <span class="hero-tag">✦ Welcome to Indoor Roots</span>
+                <h1 class="hero-title">Bringing Nature<br>Closer To You</h1>
+                <p class="hero-subtitle">Miniature toys, indoor plants, stylish pots and much more to beautify your space. Curated with love, delivered with care.</p>
+                <div class="hero-buttons">
+                    <a href="plants.html" class="btn btn-primary">
+                        <i class="fas fa-seedling" style="margin-right:8px"></i> Shop Plants
+                    </a>
+                    <a href="miniature-toys.html" class="btn btn-secondary">
+                        <i class="fas fa-star" style="margin-right:8px"></i> Explore Toys
+                    </a>
+                </div>
+                <div class="hero-highlights">
+                    <div class="highlight-item"><i class="fas fa-check-circle"></i> Quality Plants</div>
+                    <div class="highlight-item"><i class="fas fa-check-circle"></i> Unique Miniatures</div>
+                    <div class="highlight-item"><i class="fas fa-check-circle"></i> Stylish Pots</div>
+                    <div class="highlight-item"><i class="fas fa-check-circle"></i> Secure Packaging</div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image-bg"></div>
+                <img src="images/hero_plant.png" alt="Premium Indoor Plant from Indoor Roots" class="hero-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======= FEATURES BANNER ======= -->
+
+
+<!-- ======= BEST SELLING PLANTS ======= -->
+<section class="section" id="best-plants">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Our Bestsellers</span>
+            <h2 class="section-title">Best Selling Plants</h2>
+        </div>
+        <div class="grid-4">
+
+            <div class="product-card reveal delay-100"
+                 data-desc="Monstera Deliciosa is a stunning tropical plant loved for its iconic split leaves. Perfect for brightening living rooms and offices."
+                 data-specs='[{"icon":"fas fa-tint","label":"Water","value":"Moderate"},{"icon":"fas fa-sun","label":"Light","value":"Indirect"},{"icon":"fas fa-thermometer-half","label":"Care","value":"Easy"},{"icon":"fas fa-ruler","label":"Size","value":"Medium"}]'>
+                <div class="product-image-container">
+                    <span class="product-badge badge-gold">Bestseller</span>
+                    <img src="images/plant_monstera.png" alt="Monstera Deliciosa" class="product-img">
+                    <div class="product-overlay">
+                        <button class="btn-quickview" title="Quick View"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Indoor Plants</span>
+                    <h3 class="product-name">Monstera Deliciosa</h3>
+                    <div class="product-meta-row">
+                        <span class="product-price">₹549</span>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="product-care-info">
+                        <span><i class="fas fa-tint"></i> Moderate</span>
+                        <span><i class="fas fa-sun"></i> Indirect</span>
+                        <span><i class="fas fa-smile"></i> Easy</span>
+                    </div>
+                    <button class="product-buy-btn" data-product="Monstera Deliciosa" data-price="549">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card reveal delay-200"
+                 data-desc="Snake Plant is one of the best air-purifying plants. Nearly indestructible, it thrives in low light and minimal watering."
+                 data-specs='[{"icon":"fas fa-tint","label":"Water","value":"Low"},{"icon":"fas fa-sun","label":"Light","value":"Any"},{"icon":"fas fa-thermometer-half","label":"Care","value":"Very Easy"},{"icon":"fas fa-ruler","label":"Size","value":"Medium"}]'>
+                <div class="product-image-container">
+                    <span class="product-badge badge-mint">Air Purifying</span>
+                    <img src="images/plant_snake.png" alt="Snake Plant" class="product-img">
+                    <div class="product-overlay">
+                        <button class="btn-quickview" title="Quick View"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Air Purifying</span>
+                    <h3 class="product-name">Snake Plant</h3>
+                    <div class="product-meta-row">
+                        <span class="product-price">₹399</span>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="product-care-info">
+                        <span><i class="fas fa-tint"></i> Low</span>
+                        <span><i class="fas fa-sun"></i> Any Light</span>
+                        <span><i class="fas fa-smile"></i> Very Easy</span>
+                    </div>
+                    <button class="product-buy-btn" data-product="Snake Plant" data-price="399">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card reveal delay-300"
+                 data-desc="The ZZ Plant is the ultimate low-maintenance indoor plant. Its glossy leaves and upright structure add elegance to any room."
+                 data-specs='[{"icon":"fas fa-tint","label":"Water","value":"Very Low"},{"icon":"fas fa-sun","label":"Light","value":"Low to Medium"},{"icon":"fas fa-thermometer-half","label":"Care","value":"Beginner"},{"icon":"fas fa-ruler","label":"Size","value":"Small-Medium"}]'>
+                <div class="product-image-container">
+                    <img src="images/plant_zz.png" alt="ZZ Plant" class="product-img">
+                    <div class="product-overlay">
+                        <button class="btn-quickview" title="Quick View"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Decorative</span>
+                    <h3 class="product-name">ZZ Plant</h3>
+                    <div class="product-meta-row">
+                        <span class="product-price">₹449</span>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="product-care-info">
+                        <span><i class="fas fa-tint"></i> Very Low</span>
+                        <span><i class="fas fa-sun"></i> Low Light</span>
+                        <span><i class="fas fa-smile"></i> Beginner</span>
+                    </div>
+                    <button class="product-buy-btn" data-product="ZZ Plant" data-price="449">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card reveal delay-400"
+                 data-desc="Money Plant is a beloved lucky charm and easy-to-grow vine. It's said to attract good fortune and purify the air beautifully."
+                 data-specs='[{"icon":"fas fa-tint","label":"Water","value":"Moderate"},{"icon":"fas fa-sun","label":"Light","value":"Indirect"},{"icon":"fas fa-thermometer-half","label":"Care","value":"Easy"},{"icon":"fas fa-ruler","label":"Size","value":"Vine/Trailing"}]'>
+                <div class="product-image-container">
+                    <span class="product-badge">Lucky Plant</span>
+                    <img src="images/plant_money.png" alt="Money Plant" class="product-img">
+                    <div class="product-overlay">
+                        <button class="btn-quickview" title="Quick View"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Lucky Plants</span>
+                    <h3 class="product-name">Money Plant</h3>
+                    <div class="product-meta-row">
+                        <span class="product-price">₹299</span>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="product-care-info">
+                        <span><i class="fas fa-tint"></i> Moderate</span>
+                        <span><i class="fas fa-sun"></i> Indirect</span>
+                        <span><i class="fas fa-smile"></i> Easy</span>
+                    </div>
+                    <button class="product-buy-btn" data-product="Money Plant" data-price="299">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div style="text-align:center; margin-top:50px;" class="reveal">
+            <a href="plants.html" class="btn btn-secondary">View All Plants <i class="fas fa-arrow-right" style="margin-left:8px"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ======= FEATURED MINIATURE TOYS ======= -->
+<section class="section section-bg-mint" id="featured-toys">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Adorable & Premium</span>
+            <h2 class="section-title">Featured Miniature Toys</h2>
+        </div>
+        <div class="grid-4">
+
+            <div class="product-card reveal delay-100"
+                 data-desc="A handcrafted fairy garden house with intricate details. Perfect for garden terrariums or as a standalone decorative piece."
+                 data-specs='[{"icon":"fas fa-ruler","label":"Size","value":"5 inch"},{"icon":"fas fa-cube","label":"Material","value":"Resin + Moss"},{"icon":"fas fa-palette","label":"Theme","value":"Fairy Garden"},{"icon":"fas fa-gift","label":"Gift Ready","value":"Yes"}]'>
+                <div class="product-image-container">
+                    <span class="product-badge badge-gold">Popular</span>
+                    <img src="images/toy_fairy_house.png" alt="Fairy Garden House" class="product-img">
+                    <div class="product-overlay">
+                        <button class="btn-quickview" title="Quick View"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Fairy Garden Sets</span>
+                    <h3 class="product-name">Fairy Garden House</h3>
+                    <div class="product-meta-row">
+                        <span class="product-price">₹349</span>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <button class="product-buy-btn" data-product="Fairy Garden House" data-price="349">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card reveal delay-200"
+                 data-desc="Adorable miniature panda family set displayed on lush green moss. An irresistible gift for all ages and a charming desk accessory."
+                 data-specs='[{"icon":"fas fa-ruler","label":"Size","value":"3-4 inch"},{"icon":"fas fa-cube","label":"Material","value":"Resin"},{"icon":"fas fa-palette","label":"Theme","value":"Animals"},{"icon":"fas fa-gift","label":"Gift Ready","value":"Yes"}]'>
+                <div class="product-image-container">
+                    <img src="images/toy_panda.png" alt="Miniature Panda Family" class="product-img">
+                    <div class="product-overlay">
+                        <button class="btn-quickview" title="Quick View"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Animals</span>
+                    <h3 class="product-name">Panda Family Set</h3>
+                    <div class="product-meta-row">
+                        <span class="product-price">₹299</span>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <button class="product-buy-btn" data-product="Panda Family Set" data-price="299">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card reveal delay-300"
+                 data-desc="A beautifully detailed miniature vintage car placed in a lush green garden setting. A collector's piece and perfect desktop décor."
+                 data-specs='[{"icon":"fas fa-ruler","label":"Size","value":"4 inch"},{"icon":"fas fa-cube","label":"Material","value":"Metal + Resin"},{"icon":"fas fa-palette","label":"Theme","value":"Vintage Cars"},{"icon":"fas fa-gift","label":"Gift Ready","value":"Yes"}]'>
+                <div class="product-image-container">
+                    <span class="product-badge badge-mint">New</span>
+                    <img src="images/toy_car.png" alt="Miniature Vintage Car" class="product-img">
+                    <div class="product-overlay">
+                        <button class="btn-quickview" title="Quick View"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Cars</span>
+                    <h3 class="product-name">Vintage Garden Car</h3>
+                    <div class="product-meta-row">
+                        <span class="product-price">₹399</span>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <button class="product-buy-btn" data-product="Vintage Garden Car" data-price="399">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card reveal delay-400"
+                 data-desc="A set of hand-painted ceramic mushrooms perfect for terrariums and fairy gardens. Adds a magical, whimsical touch to any plant setting."
+                 data-specs='[{"icon":"fas fa-ruler","label":"Size","value":"2-3 inch"},{"icon":"fas fa-cube","label":"Material","value":"Ceramic"},{"icon":"fas fa-palette","label":"Theme","value":"Fairy Garden"},{"icon":"fas fa-gift","label":"Gift Ready","value":"Yes"}]'>
+                <div class="product-image-container">
+                    <img src="images/toy_mushroom.png" alt="Miniature Mushroom Set" class="product-img">
+                    <div class="product-overlay">
+                        <button class="btn-quickview" title="Quick View"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Mini Houses</span>
+                    <h3 class="product-name">Ceramic Mushroom Set</h3>
+                    <div class="product-meta-row">
+                        <span class="product-price">₹249</span>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <button class="product-buy-btn" data-product="Ceramic Mushroom Set" data-price="249">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div style="text-align:center; margin-top:50px;" class="reveal">
+            <a href="miniature-toys.html" class="btn btn-primary">View All Toys <i class="fas fa-arrow-right" style="margin-left:8px"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ======= WHY CHOOSE US ======= -->
+<section class="section" id="why-us">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Our Promise</span>
+            <h2 class="section-title">Why Choose Indoor Roots</h2>
+        </div>
+        <div class="why-choose-grid">
+            <div class="why-card reveal delay-100">
+                <div class="why-icon"><i class="fas fa-seedling"></i></div>
+                <h4>Handpicked Plants</h4>
+                <p>Every plant is personally selected for health, beauty, and quality before reaching you.</p>
+            </div>
+            <div class="why-card reveal delay-200">
+                <div class="why-icon"><i class="fas fa-star"></i></div>
+                <h4>Creative Miniatures</h4>
+                <p>Unique, premium miniature toys sourced and curated for true collectors and décor lovers.</p>
+            </div>
+            <div class="why-card reveal delay-300">
+                <div class="why-icon"><i class="fas fa-palette"></i></div>
+                <h4>Stylish Pots</h4>
+                <p>Designer pots and planters that complement your plants and elevate your living space.</p>
+            </div>
+            <div class="why-card reveal delay-400">
+                <div class="why-icon"><i class="fas fa-heart"></i></div>
+                <h4>Customer First</h4>
+                <p>We're here for you every step of the way, from selection to safe delivery and beyond.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======= CUSTOMER REVIEWS ======= -->
+<section class="section section-bg-mint testimonials-section" id="reviews">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Happy Customers</span>
+            <h2 class="section-title">What Our Customers Say</h2>
+        </div>
+        <div class="testimonials-slider-container">
+            <div class="testimonials-track">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Excellent plant quality and beautiful packaging. My Monstera arrived in perfect condition — even better than the photos! Indoor Roots is my go-to plant shop now."</p>
+                        <div class="testimonial-name">– Priya Sharma</div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Indoor Roots transformed my balcony garden completely. The plants are thriving and the miniature toys add such a magical touch to my space. Highly recommended!"</p>
+                        <div class="testimonial-name">– Rahul Kumar</div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The miniature toys are adorable and feel so premium. I ordered the fairy garden house and panda set — both are beautiful! Perfect gifts for plant lovers."</p>
+                        <div class="testimonial-name">– Sneha Reddy</div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Fast delivery and amazing customer support! They helped me choose the perfect plants for my office. The WhatsApp ordering process is so convenient and smooth."</p>
+                        <div class="testimonial-name">– Akash Verma</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-arrows">
+                <button class="slider-arrow slider-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-arrow slider-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="testimonials-dots">
+                <div class="dot active" data-index="0"></div>
+                <div class="dot" data-index="1"></div>
+                <div class="dot" data-index="2"></div>
+                <div class="dot" data-index="3"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======= INSTAGRAM / GALLERY ======= -->
+<section class="instagram-gallery" id="gallery">
+    <div class="instagram-grid">
+        <div class="instagram-item"><img src="images/plant_monstera.png" alt="Indoor Plants" class="instagram-img"><div class="instagram-overlay"><i class="fab fa-instagram"></i></div></div>
+        <div class="instagram-item"><img src="images/toy_fairy_house.png" alt="Fairy Garden" class="instagram-img"><div class="instagram-overlay"><i class="fab fa-instagram"></i></div></div>
+        <div class="instagram-item"><img src="images/plant_snake.png" alt="Snake Plant" class="instagram-img"><div class="instagram-overlay"><i class="fab fa-instagram"></i></div></div>
+        <div class="instagram-item"><img src="images/toy_panda.png" alt="Panda Miniatures" class="instagram-img"><div class="instagram-overlay"><i class="fab fa-instagram"></i></div></div>
+        <div class="instagram-item"><img src="images/toy_car.png" alt="Garden Car" class="instagram-img"><div class="instagram-overlay"><i class="fab fa-instagram"></i></div></div>
+        <div class="instagram-item"><img src="images/about_story.png" alt="Our Shop" class="instagram-img"><div class="instagram-overlay"><i class="fab fa-instagram"></i></div></div>
+    </div>
+</section>
+
+<!-- ======= FAQ SECTION ======= -->
+<section class="section section-bg-light" id="faq">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Got Questions?</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-grid">
+            <div class="faq-item reveal delay-100">
+                <div class="faq-header">
+                    <span class="faq-question">How do I place an order?</span>
+                    <i class="fas fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-content">
+                    <p class="faq-answer">Simply click the "Buy Now" button on any product, and it will automatically open WhatsApp with a pre-filled order message. Send it to us and we'll confirm your order within minutes!</p>
+                </div>
+            </div>
+            <div class="faq-item reveal delay-200">
+                <div class="faq-header">
+                    <span class="faq-question">Do you deliver pan-India?</span>
+                    <i class="fas fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-content">
+                    <p class="faq-answer">Yes! We deliver to all major cities across India. Plants are carefully packaged to ensure they arrive fresh and healthy at your doorstep.</p>
+                </div>
+            </div>
+            <div class="faq-item reveal delay-300">
+                <div class="faq-header">
+                    <span class="faq-question">Are the plants healthy when they arrive?</span>
+                    <i class="fas fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-content">
+                    <p class="faq-answer">Absolutely! We use special breathable packaging with moisture-retaining materials. Each plant is inspected and watered before dispatch to ensure it arrives in perfect condition.</p>
+                </div>
+            </div>
+            <div class="faq-item reveal delay-400">
+                <div class="faq-header">
+                    <span class="faq-question">Can I get care instructions for my plant?</span>
+                    <i class="fas fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-content">
+                    <p class="faq-answer">Every order comes with detailed care instructions for your specific plant. You can also reach us anytime on WhatsApp for personalized plant care advice!</p>
+                </div>
+            </div>
+            <div class="faq-item reveal delay-500">
+                <div class="faq-header">
+                    <span class="faq-question">What payment methods do you accept?</span>
+                    <i class="fas fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-content">
+                    <p class="faq-answer">We accept UPI (GPay, PhonePe, Paytm), bank transfers, and cash on delivery for select locations. Payment details are shared after you place your order via WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col footer-col-info">
+                <a href="index.html" class="logo">
+                    <span class="logo-main">INDOOR ROOTS</span>
+                    <span class="logo-tag">✦ The Garden Shop ✦</span>
+                </a>
+                <p class="footer-desc">Bringing nature closer to your home. Premium indoor plants, miniature toys, and stylish pots curated with love.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/917660087770" target="_blank" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="plants.html">Plants</a></li>
+                    <li><a href="miniature-toys.html">Miniature Toys</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Plant Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="plants.html">Indoor Plants</a></li>
+                    <li><a href="plants.html">Air Purifying Plants</a></li>
+                    <li><a href="plants.html">Lucky Plants</a></li>
+                    <li><a href="plants.html">Decorative Plants</a></li>
+                    <li><a href="miniature-toys.html">Miniature Toys</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-newsletter">
+                <h4>Stay Connected</h4>
+                <div class="footer-contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>+91 76600 87770</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>indoorroots@gmail.com</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <span>@indoorroots</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Indoor Roots – The Garden Shop. All rights reserved.</p>
+            <p>Made with <i class="fas fa-leaf" style="color:var(--color-gold)"></i> for plant lovers</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ======= QUICK VIEW MODAL ======= -->
+<div class="modal-overlay" id="quickViewModal">
+    <div class="modal-container">
+        <button class="modal-close" id="modalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+        <div class="modal-grid">
+            <div class="modal-image-col">
+                <img src="" alt="Product" class="modal-img" id="modalImg">
+            </div>
+            <div class="modal-details-col">
+                <p class="modal-category" id="modalCategory"></p>
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <p class="modal-price" id="modalPrice"></p>
+                <p class="modal-desc" id="modalDesc"></p>
+                <div class="modal-specs" id="modalSpecs"></div>
+                <button class="modal-buy-btn" id="modalBuyBtn">
+                    <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ======= FLOATING WIDGETS ======= -->
+<div class="floating-widgets">
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></button>
+    <a href="https://wa.me/917660087770" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

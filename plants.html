@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indoor Plants – Indoor Roots | Shop Premium Plants Online</title>
+    <meta name="description" content="Shop premium indoor plants at Indoor Roots. Browse Indoor, Air Purifying, Lucky, and Decorative plants. Order via WhatsApp for instant delivery.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .catalog-hero {
+            background: linear-gradient(135deg, var(--color-forest-dark) 0%, var(--color-sage) 100%);
+            padding: calc(var(--header-height) + 60px) 0 80px;
+            text-align: center;
+            color: var(--color-white);
+        }
+        .catalog-hero h1 { color: var(--color-white); font-size: 3rem; margin-bottom: 12px; }
+        .catalog-hero p { color: rgba(255,255,255,0.8); font-size: 1.1rem; font-weight: 300; max-width: 560px; margin: 0 auto; }
+        .catalog-body { padding: 80px 0; }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 28px;
+        }
+        .product-wrapper { display: flex; }
+        @media (max-width: 1024px) { .products-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 768px) { .products-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 480px) { .products-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div class="loader-wrapper" id="loader">
+    <div class="loader-logo">
+        <div class="loader-logo-main">INDOOR ROOTS</div>
+        <div class="loader-logo-tag">The Garden Shop</div>
+    </div>
+    <div class="loader-spinner"><i class="fas fa-leaf loader-leaf"></i></div>
+</div>
+
+<!-- HEADER -->
+<header class="header scrolled" id="header">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <span class="logo-main">INDOOR ROOTS</span>
+            <span class="logo-tag">✦ The Garden Shop ✦</span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="miniature-toys.html" class="nav-link">Miniature Toys</a></li>
+            <li><a href="plants.html" class="nav-link active">Plants</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="https://wa.me/917660087770" target="_blank" class="whatsapp-nav-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <div class="mobile-toggle" id="mobileToggle" aria-label="Open Menu"><span></span><span></span><span></span></div>
+        </div>
+    </div>
+</header>
+
+<!-- CATALOG HERO -->
+
+<section class="catalog-hero">
+    <img src="https://i.pinimg.com/736x/d9/b1/a1/d9b1a1416f466987cc2491c8ce5f83a3.jpg" alt="Indoor Plants Banner" class="hero-img">
+    <div class="container">
+        <span class="section-subtitle" style="color:var(--color-gold)">Curated for Your Home</span>
+        <h1>Our Plant Collection</h1>
+        <p>From air-purifying powerhouses to gorgeous decorative foliage — find the perfect plant for every corner of your home.</p>
+    </div>
+</section>
+
+<!-- PLANT CATALOG -->
+<section class="catalog-body">
+    <div class="container">
+        <!-- Filter Tabs -->
+        <div class="filter-tabs" id="plantFilterTabs">
+            <button class="filter-tab active" data-filter="all">All Plants</button>
+            <button class="filter-tab" data-filter="indoor">Indoor Plants</button>
+            <button class="filter-tab" data-filter="air">Air Purifying</button>
+            <button class="filter-tab" data-filter="lucky">Lucky Plants</button>
+            <button class="filter-tab" data-filter="decorative">Decorative Plants</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="plantGrid">
+
+            <!-- Monstera -->
+            <div class="product-wrapper reveal delay-100">
+            <div class="product-card" data-category="indoor"
+                 data-desc="Monstera Deliciosa is a stunning tropical plant loved for its iconic split leaves. Perfect for brightening living rooms and offices with minimal effort."
+                 data-specs='[{"icon":"fas fa-tint","label":"Water","value":"Moderate"},{"icon":"fas fa-sun","label":"Light","value":"Indirect"},{"icon":"fas fa-thermometer-half","label":"Care","value":"Easy"},{"icon":"fas fa-ruler","label":"Size","value":"Medium-Large"}]'>
+                <div class="product-image-container">
+                    <span class="product-badge badge-gold">Bestseller</span>
+                    <img src="images/plant_monstera.png" alt="Monstera Deliciosa" class="product-img">
+                    <div class="product-overlay"><button class="btn-quickview" title="Quick View"><i class="fas fa-eye"></i></button></div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Indoor Plants</span>
+                    <h3 class="product-name">Monstera Deliciosa</h3>
+                    <div class="product-meta-row">
+                        <span class="product-price">₹549</span>
+                        <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="product-care-info">
+                        <span><i class="fas fa-tint"></i> Moderate</span>
+                        <span><i class="fas fa-sun"></i> Indirect</span>
+                        <span><i class="fas fa-smile"></i> Easy</span>
+                    </div>
+                    <button class="product-buy-btn" data-product="Monstera Deliciosa" data-price="549"><i class="fab fa-whatsapp"></i> Buy Now</button>
+                </div>
+            </div>
+            </div>
+
+            <!-- Snake Plant -->
+            <div class="product-wrapper reveal delay-200">
+            <div class="product-card" data-category="air"
+                 data-desc="Snake Plant is one of the best air-purifying plants available. Nearly indestructible, it thrives in low light and minimal watering — perfect for beginners."
+                 data-specs='[{"icon":"fas fa-tint","label":"Water","value":"Low"},{"icon":"fas fa-sun","label":"Light","value":"Any"},{"icon":"fas fa-thermometer-half","label":"Care","value":"Very Easy"},{"icon":"fas fa-ruler","label":"Size","value":"Medium"}]'>
+                <div class="product-image-container">
+                    <span class="product-badge badge-mint">Air Purifying</span>
+                    <img src="images/plant_snake.png" alt="Snake Plant" class="product-img">
+                    <div class="product-overlay"><button class="btn-quickview" title="Quick View"><i class="fas fa-eye"></i></button></div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Air Purifying Plants</span>
+                    <h3 class="product-name">Snake Plant</h3>
+                    <div class="product-meta-row">
+                        <span class="product-price">₹399</span>
+                        <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="product-care-info">
+                        <span><i class="fas fa-tint"></i> Low</span>
+                        <span><i class="fas fa-sun"></i> Any Light</span>
+                        <span><i class="fas fa-smile"></i> Very Easy</span>
+                    </div>
+                    <button class="product-buy-btn" data-product="Snake Plant" data-price="399"><i class="fab fa-whatsapp"></i> Buy Now</button>
+                </div>
+            </div>
+            </div>
+
+            <!-- ZZ Plant -->
+            <div class="product-wrapper reveal delay-300">
+            <div class="product-card" data-category="decorative"
+                 data-desc="The ZZ Plant's glossy, waxy leaves and upright form make it one of the most elegant decorative plants for homes and offices. Extremely low maintenance."
+                 data-specs='[{"icon":"fas fa-tint","label":"Water","value":"Very Low"},{"icon":"fas fa-sun","label":"Light","value":"Low to Medium"},{"icon":"fas fa-thermometer-half","label":"Care","value":"Beginner"},{"icon":"fas fa-ruler","label":"Size","value":"Small-Medium"}]'>
+                <div class="product-image-container">
+                    <img src="images/plant_zz.png" alt="ZZ Plant" class="product-img">
+                    <div class="product-overlay"><button class="btn-quickview" title="Quick View"><i class="fas fa-eye"></i></button></div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Decorative Plants</span>
+                    <h3 class="product-name">ZZ Plant</h3>
+                    <div class="product-meta-row">
+                        <span class="product-price">₹449</span>
+                        <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                    </div>
+                    <div class="product-care-info">
+                        <span><i class="fas fa-tint"></i> Very Low</span>
+                        <span><i class="fas fa-sun"></i> Low Light</span>
+                        <span><i class="fas fa-smile"></i> Beginner</span>
+                    </div>
+                    <button class="product-buy-btn" data-product="ZZ Plant" data-price="449"><i class="fab fa-whatsapp"></i> Buy Now</button>
+                </div>
+            </div>
+            </div>
+
+            <!-- Money Plant -->
+            <div class="product-wrapper reveal delay-400">
+            <div class="product-card" data-category="lucky"
+                 data-desc="Money Plant is beloved for attracting good fortune and is incredibly easy to grow. Its trailing vines look stunning in hanging pots or wall planters."
+                 data-specs='[{"icon":"fas fa-tint","label":"Water","value":"Moderate"},{"icon":"fas fa-sun","label":"Light","value":"Indirect"},{"icon":"fas fa-thermometer-half","label":"Care","value":"Easy"},{"icon":"fas fa-ruler","label":"Size","value":"Vine/Trailing"}]'>
+                <div class="product-image-container">
+                    <span class="product-badge">Lucky Plant</span>
+                    <img src="images/plant_money.png" alt="Money Plant" class="product-img">
+                    <div class="product-overlay"><button class="btn-quickview" title="Quick View"><i class="fas fa-eye"></i></button></div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Lucky Plants</span>
+                    <h3 class="product-name">Money Plant</h3>
+                    <div class="product-meta-row">
+                        <span class="product-price">₹299</span>
+                        <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="product-care-info">
+                        <span><i class="fas fa-tint"></i> Moderate</span>
+                        <span><i class="fas fa-sun"></i> Indirect</span>
+                        <span><i class="fas fa-smile"></i> Easy</span>
+                    </div>
+                    <button class="product-buy-btn" data-product="Money Plant" data-price="299"><i class="fab fa-whatsapp"></i> Buy Now</button>
+                </div>
+            </div>
+            </div>
+
+            <!-- Peace Lily -->
+            <div class="product-wrapper reveal delay-100">
+            <div class="product-card" data-category="air"
+                 data-desc="Peace Lily produces beautiful white blooms and is one of NASA's top air-purifying plants. It's perfect for bedrooms and bathrooms."
+                 data-specs='[{"icon":"fas fa-tint","label":"Water","value":"Moderate"},{"icon":"fas fa-sun","label":"Light","value":"Low-Medium"},{"icon":"fas fa-thermometer-half","label":"Care","value":"Easy"},{"icon":"fas fa-ruler","label":"Size","value":"Medium"}]'>
+                <div class="product-image-container">
+                    <span class="product-badge badge-mint">NASA Approved</span>
+                    <img src="images/plant_peace.png" alt="Peace Lily" class="product-img" style="filter:hue-rotate(30deg) brightness(1.05)">
+                    <div class="product-overlay"><button class="btn-quickview" title="Quick View"><i class="fas fa-eye"></i></button></div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Air Purifying Plants</span>
+                    <h3 class="product-name">Peace Lily</h3>
+                    <div class="product-meta-row">
+                        <span class="product-price">₹479</span>
+                        <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="product-care-info">
+                        <span><i class="fas fa-tint"></i> Moderate</span>
+                        <span><i class="fas fa-sun"></i> Low Light</span>
+                        <span><i class="fas fa-smile"></i> Easy</span>
+                    </div>
+                    <button class="product-buy-btn" data-product="Peace Lily" data-price="479"><i class="fab fa-whatsapp"></i> Buy Now</button>
+                </div>
+            </div>
+            </div>
+
+            <!-- Jade Plant -->
+            <div class="product-wrapper reveal delay-200">
+            <div class="product-card" data-category="lucky"
+                 data-desc="Jade Plant, also known as the Friendship Tree, is a beloved succulent believed to bring good luck, prosperity, and positive energy to the home."
+                 data-specs='[{"icon":"fas fa-tint","label":"Water","value":"Low"},{"icon":"fas fa-sun","label":"Light","value":"Bright Indirect"},{"icon":"fas fa-thermometer-half","label":"Care","value":"Easy"},{"icon":"fas fa-ruler","label":"Size","value":"Small-Medium"}]'>
+                <div class="product-image-container">
+                    <img src="images/plant_jade.png" alt="Jade Plant" class="product-img" style="filter:saturate(0.9) hue-rotate(10deg)">
+                    <div class="product-overlay"><button class="btn-quickview" title="Quick View"><i class="fas fa-eye"></i></button></div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Lucky Plants</span>
+                    <h3 class="product-name">Jade Plant</h3>
+                    <div class="product-meta-row">
+                        <span class="product-price">₹349</span>
+                        <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                    </div>
+                    <div class="product-care-info">
+                        <span><i class="fas fa-tint"></i> Low</span>
+                        <span><i class="fas fa-sun"></i> Bright</span>
+                        <span><i class="fas fa-smile"></i> Easy</span>
+                    </div>
+                    <button class="product-buy-btn" data-product="Jade Plant" data-price="349"><i class="fab fa-whatsapp"></i> Buy Now</button>
+                </div>
+            </div>
+            </div>
+
+            <!-- Rubber Plant -->
+            <div class="product-wrapper reveal delay-300">
+            <div class="product-card" data-category="indoor"
+                 data-desc="Rubber Plant's dramatic dark-green glossy leaves make a bold statement in any room. It's a fast grower and very forgiving of occasional neglect."
+                 data-specs='[{"icon":"fas fa-tint","label":"Water","value":"Moderate"},{"icon":"fas fa-sun","label":"Light","value":"Medium-Bright"},{"icon":"fas fa-thermometer-half","label":"Care","value":"Easy"},{"icon":"fas fa-ruler","label":"Size","value":"Large"}]'>
+                <div class="product-image-container">
+                    <span class="product-badge badge-gold">Premium</span>
+                    <img src="images/plant_rubber.png" alt="Rubber Plant" class="product-img" style="filter:saturate(1.2) contrast(1.05)">
+                    <div class="product-overlay"><button class="btn-quickview" title="Quick View"><i class="fas fa-eye"></i></button></div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Indoor Plants</span>
+                    <h3 class="product-name">Rubber Plant</h3>
+                    <div class="product-meta-row">
+                        <span class="product-price">₹599</span>
+                        <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="product-care-info">
+                        <span><i class="fas fa-tint"></i> Moderate</span>
+                        <span><i class="fas fa-sun"></i> Medium</span>
+                        <span><i class="fas fa-smile"></i> Easy</span>
+                    </div>
+                    <button class="product-buy-btn" data-product="Rubber Plant" data-price="599"><i class="fab fa-whatsapp"></i> Buy Now</button>
+                </div>
+            </div>
+            </div>
+
+            <!-- Pothos -->
+            <div class="product-wrapper reveal delay-400">
+            <div class="product-card" data-category="decorative"
+                 data-desc="Golden Pothos is a trailing vine with heart-shaped, golden-green variegated leaves. It cascades beautifully from shelves and hanging pots."
+                 data-specs='[{"icon":"fas fa-tint","label":"Water","value":"Low-Moderate"},{"icon":"fas fa-sun","label":"Light","value":"Low to Bright"},{"icon":"fas fa-thermometer-half","label":"Care","value":"Very Easy"},{"icon":"fas fa-ruler","label":"Size","value":"Trailing"}]'>
+                <div class="product-image-container">
+                    <img src="images/plant_money.png" alt="Golden Pothos" class="product-img" style="filter:hue-rotate(-15deg) saturate(1.1)">
+                    <div class="product-overlay"><button class="btn-quickview" title="Quick View"><i class="fas fa-eye"></i></button></div>
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Decorative Plants</span>
+                    <h3 class="product-name">Golden Pothos</h3>
+                    <div class="product-meta-row">
+                        <span class="product-price">₹249</span>
+                        <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="product-care-info">
+                        <span><i class="fas fa-tint"></i> Low</span>
+                        <span><i class="fas fa-sun"></i> Any Light</span>
+                        <span><i class="fas fa-smile"></i> Very Easy</span>
+                    </div>
+                    <button class="product-buy-btn" data-product="Golden Pothos" data-price="249"><i class="fab fa-whatsapp"></i> Buy Now</button>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col footer-col-info">
+                <a href="index.html" class="logo"><span class="logo-main">INDOOR ROOTS</span><span class="logo-tag">✦ The Garden Shop ✦</span></a>
+                <p class="footer-desc">Bringing nature closer to your home. Premium indoor plants, miniature toys, and stylish pots curated with love.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/917660087770" target="_blank" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="plants.html">Plants</a></li>
+                    <li><a href="miniature-toys.html">Miniature Toys</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="plants.html">Indoor Plants</a></li>
+                    <li><a href="plants.html">Air Purifying Plants</a></li>
+                    <li><a href="plants.html">Lucky Plants</a></li>
+                    <li><a href="plants.html">Decorative Plants</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-newsletter">
+                <h4>Stay Connected</h4>
+                <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><span>+91 76600 87770</span></div>
+                <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>indoorroots@gmail.com</span></div>
+                <div class="footer-contact-item"><i class="fab fa-instagram"></i><span>@indoorroots</span></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Indoor Roots – The Garden Shop. All rights reserved.</p>
+            <p>Made with <i class="fas fa-leaf" style="color:var(--color-gold)"></i> for plant lovers</p>
+        </div>
+    </div>
+</footer>
+
+<!-- QUICK VIEW MODAL -->
+<div class="modal-overlay" id="quickViewModal">
+    <div class="modal-container">
+        <button class="modal-close" id="modalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+        <div class="modal-grid">
+            <div class="modal-image-col"><img src="" alt="Plant" class="modal-img" id="modalImg"></div>
+            <div class="modal-details-col">
+                <p class="modal-category" id="modalCategory"></p>
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <p class="modal-price" id="modalPrice"></p>
+                <p class="modal-desc" id="modalDesc"></p>
+                <div class="modal-specs" id="modalSpecs"></div>
+                <button class="modal-buy-btn" id="modalBuyBtn"><i class="fab fa-whatsapp"></i> Order via WhatsApp</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FLOATING WIDGETS -->
+<div class="floating-widgets">
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></button>
+    <a href="https://wa.me/917660087770" target="_blank" class="whatsapp-float" title="Chat with us" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

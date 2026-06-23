@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us – Indoor Roots | Our Story & Mission</title>
+    <meta name="description" content="Learn about Indoor Roots - our story, mission, and passion for bringing premium indoor plants, miniature toys, and stylish pots to your home.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .why-choose-about {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 60px;
+        }
+        .why-about-card {
+            background: var(--color-white);
+            border-radius: var(--border-radius-md);
+            padding: 36px 24px;
+            text-align: center;
+            box-shadow: var(--shadow-subtle);
+            transition: var(--transition-smooth);
+            border-top: 3px solid var(--color-mint-soft);
+        }
+        .why-about-card:hover {
+            transform: translateY(-6px);
+            border-top-color: var(--color-gold);
+            box-shadow: var(--shadow-medium);
+        }
+        .why-about-icon {
+            width: 70px; height: 70px;
+            border-radius: 50%;
+            background: var(--color-mint-soft);
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.8rem;
+            color: var(--color-sage);
+            transition: var(--transition-smooth);
+        }
+        .why-about-card:hover .why-about-icon {
+            background: var(--color-gold);
+            color: var(--color-white);
+        }
+        .why-about-card h4 { font-size: 1.1rem; margin-bottom: 10px; }
+        .why-about-card p { font-size: 0.87rem; color: var(--color-grey-medium); font-weight: 300; line-height: 1.6; }
+        @media (max-width: 768px) { .why-choose-about { grid-template-columns: repeat(2,1fr); } }
+        @media (max-width: 480px) { .why-choose-about { grid-template-columns: 1fr; } }
+        .team-quote {
+            background: var(--color-forest-dark);
+            color: var(--color-white);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .team-quote blockquote {
+            font-size: 1.8rem;
+            font-weight: 300;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.7;
+            color: rgba(255,255,255,0.9);
+        }
+        .team-quote cite {
+            color: var(--color-gold);
+            font-size: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div class="loader-wrapper" id="loader">
+    <div class="loader-logo">
+        <div class="loader-logo-main">INDOOR ROOTS</div>
+        <div class="loader-logo-tag">The Garden Shop</div>
+    </div>
+    <div class="loader-spinner"><i class="fas fa-leaf loader-leaf"></i></div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <span class="logo-main">INDOOR ROOTS</span>
+            <span class="logo-tag">✦ The Garden Shop ✦</span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="miniature-toys.html" class="nav-link">Miniature Toys</a></li>
+            <li><a href="plants.html" class="nav-link">Plants</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="https://wa.me/917660087770" target="_blank" class="whatsapp-nav-btn" title="Chat on WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <div class="mobile-toggle" id="mobileToggle" aria-label="Open Menu"><span></span><span></span><span></span></div>
+        </div>
+    </div>
+</header>
+
+<!-- ABOUT HERO BANNER -->
+<section class="about-hero">
+    <div>
+        <p class="about-hero-tag">✦ Our Journey ✦</p>
+        <h1 class="about-hero-title">About Indoor Roots</h1>
+    </div>
+</section>
+
+<!-- OUR STORY -->
+<section class="section" id="story">
+    <div class="container">
+        <div class="about-intro-grid">
+            <div class="about-intro-image reveal-left">
+                <img src="images/about_story.png" alt="Indoor Roots Story - Our Premium Plant Boutique" style="width:100%;height:450px;object-fit:cover;border-radius:var(--border-radius-lg);">
+            </div>
+            <div class="about-intro-text reveal-right">
+                <span class="section-subtitle">Our Story</span>
+                <h2 style="font-size:2rem;margin-bottom:20px;line-height:1.4">From a Love of Nature to a Garden That Inspires</h2>
+                <p>Indoor Roots was born from a deep passion for nature and a desire to make beautiful, healthy plants accessible to every home. What started as a small weekend project — arranging plants and miniatures for friends and family — quickly grew into something much bigger.</p>
+                <p>We noticed that people craved greenery in their homes but found plant shopping confusing, impersonal, and unreliable. So we set out to change that. We built Indoor Roots as a boutique garden shop that brings the most beautiful, healthy plants right to your door — with love, expertise, and a personal touch.</p>
+                <p>Today, we serve plant lovers across India, delivering carefully curated indoor plants, creative miniature toys, and stylish pots — all selected to bring joy, calm, and beauty into your everyday spaces.</p>
+                <a href="plants.html" class="btn btn-primary" style="margin-top:10px"><i class="fas fa-seedling" style="margin-right:8px"></i> Shop Our Collection</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS / COUNTERS -->
+<section class="achievements-section">
+    <div class="container">
+        <div class="achievements-grid">
+            <div class="counter-item reveal delay-100">
+                <div class="counter-num" data-target="5000" data-suffix="+">0</div>
+                <div class="counter-label">Happy Customers</div>
+            </div>
+            <div class="counter-item reveal delay-200">
+                <div class="counter-num" data-target="80" data-suffix="+">0</div>
+                <div class="counter-label">Plant Varieties</div>
+            </div>
+            <div class="counter-item reveal delay-300">
+                <div class="counter-num" data-target="100" data-suffix="%">0</div>
+                <div class="counter-label">Organic Quality</div>
+            </div>
+            <div class="counter-item reveal delay-400">
+                <div class="counter-num" data-target="50" data-suffix="+">0</div>
+                <div class="counter-label">Miniature Designs</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MISSION & VISION -->
+<section class="section section-bg-mint" id="mission">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Our Purpose</span>
+            <h2 class="section-title">Mission & Vision</h2>
+        </div>
+        <div class="mission-vision-grid">
+            <div class="mv-card reveal-left">
+                <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
+                <h3>Our Mission</h3>
+                <p>To make premium, healthy indoor plants and creative miniature décor accessible to every home across India — delivered with care, expertise, and a personal touch. We believe every space deserves the beauty and calm that nature provides, and we make that possible affordably and conveniently through WhatsApp ordering.</p>
+            </div>
+            <div class="mv-card reveal-right">
+                <div class="mv-icon"><i class="fas fa-eye"></i></div>
+                <h3>Our Vision</h3>
+                <p>To become India's most trusted and beloved boutique garden shop — a brand synonymous with quality, creativity, and a genuine love for plants. We envision a greener India where every balcony, living room, and desk has a touch of nature — and Indoor Roots is the bridge that makes it happen.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TEAM QUOTE -->
+<section class="team-quote">
+    <div class="container">
+        <blockquote class="reveal">"We don't just sell plants — we deliver a little piece of nature's magic to your doorstep, grown with love and curated with care."</blockquote>
+        <cite>– The Indoor Roots Team</cite>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section" id="why-choose">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Our Commitment</span>
+            <h2 class="section-title">Why Choose Indoor Roots</h2>
+        </div>
+        <div class="why-choose-about">
+            <div class="why-about-card reveal delay-100">
+                <div class="why-about-icon"><i class="fas fa-seedling"></i></div>
+                <h4>Handpicked Plants</h4>
+                <p>Every single plant is personally selected for its health, vitality, and aesthetic beauty. No mass-farmed, unhealthy plants ever leave our hands.</p>
+            </div>
+            <div class="why-about-card reveal delay-200">
+                <div class="why-about-icon"><i class="fas fa-magic"></i></div>
+                <h4>Creative Miniatures</h4>
+                <p>Our miniature toy collection is sourced from artisan makers and premium suppliers to bring you truly unique and high-quality pieces.</p>
+            </div>
+            <div class="why-about-card reveal delay-300">
+                <div class="why-about-icon"><i class="fas fa-palette"></i></div>
+                <h4>Stylish Pots</h4>
+                <p>Beautiful pots make all the difference. We curate designer planters that complement your plants and transform your living spaces.</p>
+            </div>
+            <div class="why-about-card reveal delay-400">
+                <div class="why-about-icon"><i class="fas fa-heart"></i></div>
+                <h4>Customer First</h4>
+                <p>From personalized plant advice to careful packaging and prompt delivery — your satisfaction is at the heart of everything we do.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col footer-col-info">
+                <a href="index.html" class="logo"><span class="logo-main">INDOOR ROOTS</span><span class="logo-tag">✦ The Garden Shop ✦</span></a>
+                <p class="footer-desc">Bringing nature closer to your home. Premium indoor plants, miniature toys, and stylish pots curated with love.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/917660087770" target="_blank" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="plants.html">Plants</a></li>
+                    <li><a href="miniature-toys.html">Miniature Toys</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Plant Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="plants.html">Indoor Plants</a></li>
+                    <li><a href="plants.html">Air Purifying Plants</a></li>
+                    <li><a href="plants.html">Lucky Plants</a></li>
+                    <li><a href="plants.html">Decorative Plants</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-newsletter">
+                <h4>Stay Connected</h4>
+                <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><span>+91 76600 87770</span></div>
+                <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>indoorroots@gmail.com</span></div>
+                <div class="footer-contact-item"><i class="fab fa-instagram"></i><span>@indoorroots</span></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Indoor Roots – The Garden Shop. All rights reserved.</p>
+            <p>Made with <i class="fas fa-leaf" style="color:var(--color-gold)"></i> for plant lovers</p>
+        </div>
+    </div>
+</footer>
+
+<!-- FLOATING WIDGETS -->
+<div class="floating-widgets">
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></button>
+    <a href="https://wa.me/917660087770" target="_blank" class="whatsapp-float" title="Chat with us" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

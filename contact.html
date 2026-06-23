@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us – Indoor Roots | Get In Touch</title>
+    <meta name="description" content="Contact Indoor Roots for premium indoor plants and miniature toys. Reach us via WhatsApp, Instagram, or our contact form for orders and queries.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, var(--color-forest-dark) 0%, var(--color-sage) 100%);
+            padding: calc(var(--header-height) + 60px) 0 80px;
+            text-align: center;
+            color: var(--color-white);
+        }
+        .contact-hero h1 { color: var(--color-white); font-size: 3rem; margin-bottom: 12px; }
+        .contact-hero p { color: rgba(255,255,255,0.8); font-size: 1.1rem; font-weight: 300; max-width: 520px; margin: 0 auto; }
+        .contact-page-section { padding: 80px 0; }
+        .map-section {
+            background: var(--color-forest-dark);
+            padding: 0;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .map-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--color-forest-dark) 0%, var(--color-sage) 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--color-white);
+            gap: 20px;
+        }
+        .map-placeholder i { font-size: 3rem; color: var(--color-gold); }
+        .map-placeholder h3 { font-size: 1.5rem; color: var(--color-white); }
+        .map-placeholder p { color: rgba(255,255,255,0.7); font-weight: 300; }
+        .map-placeholder a {
+            background: var(--color-gold);
+            color: var(--color-white);
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: var(--transition-smooth);
+        }
+        .map-placeholder a:hover {
+            background: var(--color-white);
+            color: var(--color-forest-dark);
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+        @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div class="loader-wrapper" id="loader">
+    <div class="loader-logo">
+        <div class="loader-logo-main">INDOOR ROOTS</div>
+        <div class="loader-logo-tag">The Garden Shop</div>
+    </div>
+    <div class="loader-spinner"><i class="fas fa-leaf loader-leaf"></i></div>
+</div>
+
+<!-- HEADER -->
+<header class="header scrolled" id="header">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <span class="logo-main">INDOOR ROOTS</span>
+            <span class="logo-tag">✦ The Garden Shop ✦</span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="miniature-toys.html" class="nav-link">Miniature Toys</a></li>
+            <li><a href="plants.html" class="nav-link">Plants</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="https://wa.me/917660087770" target="_blank" class="whatsapp-nav-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <div class="mobile-toggle" id="mobileToggle" aria-label="Open Menu"><span></span><span></span><span></span></div>
+        </div>
+    </div>
+</header>
+
+<!-- CONTACT HERO -->
+<section class="contact-hero">
+    <div class="container">
+        <span class="section-subtitle" style="color:var(--color-gold)">We'd Love to Hear From You</span>
+        <h1>Contact Us</h1>
+        <p>Have a question about plants, an order query, or just want to say hello? We're here for you on WhatsApp anytime!</p>
+    </div>
+</section>
+
+<!-- CONTACT MAIN SECTION -->
+<section class="contact-page-section">
+    <div class="container">
+        <div class="contact-grid">
+
+            <!-- LEFT: Info Column -->
+            <div class="contact-info-col reveal-left">
+                <div>
+                    <div class="contact-info-header">
+                        <h2>Get In Touch</h2>
+                        <p>We're just a WhatsApp message away! Reach us for orders, plant advice, or anything you need.</p>
+                    </div>
+                    <div class="contact-details-list">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-info-text">
+                                <h4>Address</h4>
+                                <p>Indoor Roots, The Garden Shop<br>India</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-info-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+917660087770">+91 76600 87770</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div class="contact-info-text">
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/917660087770" target="_blank">+91 76600 87770</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fab fa-instagram"></i></div>
+                            <div class="contact-info-text">
+                                <h4>Instagram</h4>
+                                <a href="#" target="_blank">@indoorroots</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-info-text">
+                                <h4>Email</h4>
+                                <a href="mailto:indoorroots@gmail.com">indoorroots@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-socials">
+                    <h4>Follow Us</h4>
+                    <div class="contact-socials-links">
+                        <a href="https://wa.me/917660087770" target="_blank" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: Form Column -->
+            <div class="contact-form-col reveal-right">
+                <form class="contact-form" id="contact-form" novalidate>
+                    <h2>Send Us a Message</h2>
+                    <p>Fill in the form below — your message will be sent directly to our WhatsApp for the fastest response!</p>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="contact-name">Your Name *</label>
+                            <input type="text" class="form-input" id="contact-name" name="name" placeholder="Priya Sharma" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contact-phone">Phone Number *</label>
+                            <input type="tel" class="form-input" id="contact-phone" name="phone" placeholder="+91 98765 43210" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="contact-email">Email Address</label>
+                        <input type="email" class="form-input" id="contact-email" name="email" placeholder="priya@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="contact-message">Your Message *</label>
+                        <textarea class="form-input" id="contact-message" name="message" placeholder="Hello Indoor Roots! I'm interested in your plants and would love to know more..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <i class="fab fa-whatsapp" style="margin-right:10px; font-size:1.1rem;"></i>
+                        Send Message via WhatsApp
+                    </button>
+
+                    <p style="font-size:0.8rem; color:var(--color-grey-medium); margin-top:16px; text-align:center;">
+                        <i class="fas fa-shield-alt" style="color:var(--color-sage); margin-right:4px;"></i>
+                        Your message goes directly to WhatsApp — no emails, fast response!
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="map-section">
+    <div class="container">
+        <iframe
+            src="https://maps.google.com/maps?q=Rajahmundry,Andhra%20Pradesh&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="400"
+            style="border:0; border-radius:15px;"
+            allowfullscreen=""
+            loading="fast">
+        </iframe>
+
+       
+    </div>
+</section>
+
+<!-- FAQ QUICK SECTION -->
+<section class="section section-bg-light">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Common Questions</span>
+            <h2 class="section-title">Quick Answers</h2>
+        </div>
+        <div class="faq-grid">
+            <div class="faq-item reveal delay-100">
+                <div class="faq-header">
+                    <span class="faq-question">What are your business hours?</span>
+                    <i class="fas fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-content">
+                    <p class="faq-answer">We're available on WhatsApp from 9 AM to 9 PM, Monday to Saturday. We respond to all messages within a few hours. Sunday is our plant care day, but we still check messages!</p>
+                </div>
+            </div>
+            <div class="faq-item reveal delay-200">
+                <div class="faq-header">
+                    <span class="faq-question">How long does delivery take?</span>
+                    <i class="fas fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-content">
+                    <p class="faq-answer">Standard delivery takes 3-5 business days. We carefully package every plant and toy to ensure it arrives in perfect condition at your doorstep, no matter how far you are.</p>
+                </div>
+            </div>
+            <div class="faq-item reveal delay-300">
+                <div class="faq-header">
+                    <span class="faq-question">Can I get a custom plant arrangement?</span>
+                    <i class="fas fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-content">
+                    <p class="faq-answer">Absolutely! We love creating custom plant arrangements and gift sets. Just message us on WhatsApp with your requirements, budget, and occasion — and we'll curate something beautiful for you!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col footer-col-info">
+                <a href="index.html" class="logo"><span class="logo-main">INDOOR ROOTS</span><span class="logo-tag">✦ The Garden Shop ✦</span></a>
+                <p class="footer-desc">Bringing nature closer to your home. Premium indoor plants, miniature toys, and stylish pots curated with love.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/917660087770" target="_blank" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="plants.html">Plants</a></li>
+                    <li><a href="miniature-toys.html">Miniature Toys</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="plants.html">Indoor Plants</a></li>
+                    <li><a href="plants.html">Air Purifying Plants</a></li>
+                    <li><a href="plants.html">Lucky Plants</a></li>
+                    <li><a href="miniature-toys.html">Miniature Toys</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-newsletter">
+                <h4>Stay Connected</h4>
+                <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><span>+91 76600 87770</span></div>
+                <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>indoorroots@gmail.com</span></div>
+                <div class="footer-contact-item"><i class="fab fa-instagram"></i><span>@indoorroots</span></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Indoor Roots – The Garden Shop. All rights reserved.</p>
+            <p>Made with <i class="fas fa-leaf" style="color:var(--color-gold)"></i> for plant lovers</p>
+        </div>
+    </div>
+</footer>
+
+<!-- FLOATING WIDGETS -->
+<div class="floating-widgets">
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></button>
+    <a href="https://wa.me/917660087770" target="_blank" class="whatsapp-float" title="Chat with us" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
